@@ -4,7 +4,7 @@ import '../veiculos/carros.dart';
 Carro getmeuCarro() {
   return Carro(
       marca: "Mercedes", 
-      modelo: "GLA 35 AMG", 
+      modelo: "GLA AMG", 
       cor: "Prata", 
       ano: 2025, 
       movimento: false,

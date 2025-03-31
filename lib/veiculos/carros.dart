@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 class Carro {
   String marca;
   String modelo;
@@ -17,9 +15,8 @@ class Carro {
     required this.movimento,
     required this.urlImage,
   });
-
-  Andar(){
-    if (movimento == true){
+  andar() {
+    if (movimento == true) {
       print("O veículo está em movimento");
     } else {
       print("O veículo está parado");

@@ -1,6 +1,7 @@
 import 'package:app_car/dados/meu_carro.dart';
 import 'package:app_car/veiculos/carros.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -23,11 +24,13 @@ class Home extends StatelessWidget {
         elevation: 7,
       ),
       body: Container(
+        width: double.infinity,
+        height: double.infinity,
         color: const Color.fromARGB(255, 216, 219, 219),
-        child: Padding(
-          padding: const EdgeInsets.all(40),
-          child: Center(
-            child: Column(
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 "Marca: " + meucarro.marca,
@@ -36,13 +39,15 @@ class Home extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
+             
               Text(
-               "Modelo: " + meucarro.modelo,
+                "Modelo: " + meucarro.modelo,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
+             
               Text(
                 "Cor: " + meucarro.cor,
                 style: TextStyle(
@@ -50,6 +55,7 @@ class Home extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
+               
               Text(
                 "Ano: " + meucarro.ano.toString(),
                 style: TextStyle(
@@ -57,19 +63,17 @@ class Home extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              const Spacer(),
-              Align(alignment: Alignment.centerLeft, child: Container(
-                    child: Image.network(
-                      meucarro.urlImage!,
-              ),
-                ), 
+               
+              Container(
+                child: Image.network(
+                  meucarro.urlImage!,
+                  width: 400,
                 ),
-                
+              ),
             ],
-            ),
-           ),
+          ),
         ),
-        ),
-      );
+      ),
+    );
   }
 }
