@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Carro meucarro = getCarro();
+    Carro meucarro = getmeuCarro();
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -57,12 +57,14 @@ class Home extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              const Spacer()
-                Container(
+              const Spacer(),
+              Align(alignment: Alignment.centerLeft, child: Container(
                     child: Image.network(
                       meucarro.urlImage!,
               ),
+                ), 
                 ),
+                
             ],
             ),
            ),
