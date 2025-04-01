@@ -26,64 +26,52 @@ class Home extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: const Color.fromARGB(255, 216, 219, 219),
-        child: Row(
-          children: [
-            Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    "Marca: " + meucarro.marca,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
+        color: const Color.fromARGB(255, 223, 226, 226),
+        child: Padding(
+          padding: const EdgeInsets.all(40),
+          child: Container(
+            child: Column(
+              children: [
+                Text(
+                  "Marca: " + meucarro.marca,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                   ),
+                ),
+                Text(
+                  "Modelo: " + meucarro.modelo,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
+                Text(
+                  "Cor: " + meucarro.cor,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+                ),
                  
-                  Text(
-                    "Modelo: " + meucarro.modelo,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
+                Text(
+                  "Ano: " + meucarro.ano.toString(),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                   ),
-                 
-                  Text(
-                    "Cor: " + meucarro.cor,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                ),
+                    Container(
+                      child: Image.network(
+                        meucarro.urlImage!,
+                        width: 550,
+                      ),
                     ),
-                  ),
-                   
-                  Text(
-                    "Ano: " + meucarro.ano.toString(),
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
-                   
-                  
-                    Row(
-                      children: [
-                        Container(
-                          child: Image.network(
-                            meucarro.urlImage!,
-                            width: 400,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+                  ],
+                ),
             ),
-          ],
         ),
-      ),
+        ),
     );
   }
 }
