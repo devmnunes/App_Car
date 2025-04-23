@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
                       "Marca: " + meucarro.marca,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 25,
                       ),
                     ),
                   
@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
                     "Modelo: " + meucarro.modelo,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 25,
                     ),
                   ),
                 ),
@@ -55,7 +55,7 @@ class Home extends StatelessWidget {
                     "Cor: " + meucarro.cor,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 25,
                     ),
                   ),
                 ),
@@ -64,7 +64,7 @@ class Home extends StatelessWidget {
                     "Ano: " + meucarro.ano.toString(),
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 25,
                     ),
                   ),
                 ),
