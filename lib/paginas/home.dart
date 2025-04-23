@@ -24,48 +24,51 @@ class Home extends StatelessWidget {
           shadowColor: Colors.black,
           elevation: 7,
         ),
-        body: Column(
+        body: Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Center(
-              child: Column(
-                children: [
-                  Text(
-                    "Marca: " + meucarro.marca,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Center(
+                  child: Text(
+                      "Marca: " + meucarro.marca,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  
+                ),
+                Center(
+                  child: Text(
+                    "Modelo: " + meucarro.modelo,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),
                   ),
-                ],
-              ),
-            ),
-            Center(
-              child: Text(
-                "Modelo: " + meucarro.modelo,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
                 ),
-              ),
-            ),
-            Center(
-              child: Text(
-                "Cor: " + meucarro.cor,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
+                Center(
+                  child: Text(
+                    "Cor: " + meucarro.cor,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            Center(
-              child: Text(
-                "Ano: " + meucarro.ano.toString(),
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
+                Center(
+                  child: Text(
+                    "Ano: " + meucarro.ano.toString(),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
                 ),
-              ),
+              ],
             ),
             Center(
               child: Image.network(
