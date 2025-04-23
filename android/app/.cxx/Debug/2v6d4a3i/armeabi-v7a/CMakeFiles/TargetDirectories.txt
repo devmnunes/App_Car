@@ -1,0 +1,2 @@
+C:/Users/MatheusNunes/OneDrive - Orus Online LTDA/Documentos/GitHub/App_Car/android/app/.cxx/Debug/2v6d4a3i/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/MatheusNunes/OneDrive - Orus Online LTDA/Documentos/GitHub/App_Car/android/app/.cxx/Debug/2v6d4a3i/armeabi-v7a/CMakeFiles/rebuild_cache.dir
