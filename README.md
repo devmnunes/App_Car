@@ -1,16 +1,8 @@
-# app_car
+Aplicativo criado usando a linguagem de programação Dart e o Framework Flutter, para fins de estudo e aprendizagem.
 
-A new Flutter project.
+Versão Android - ^15.0
 
-## Getting Started
+1. APLICATIVO PRONTO.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   
+ ![Image](https://github.com/user-attachments/assets/962472bb-c0aa-453a-a4d8-a12c19090cc3)
