@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
           shadowColor: Colors.black,
           elevation: 7,
         ),
-        body: Row(
+        body:Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
                       "Marca: " + meucarro.marca,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 25,
+                        fontSize: 18,
                       ),
                     ),
                   
@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
                     "Modelo: " + meucarro.modelo,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                      fontSize: 18,
                     ),
                   ),
                 ),
@@ -55,7 +55,7 @@ class Home extends StatelessWidget {
                     "Cor: " + meucarro.cor,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                      fontSize: 18,
                     ),
                   ),
                 ),
@@ -64,7 +64,7 @@ class Home extends StatelessWidget {
                     "Ano: " + meucarro.ano.toString(),
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
+                      fontSize: 18,
                     ),
                   ),
                 ),
@@ -73,7 +73,7 @@ class Home extends StatelessWidget {
             Center(
               child: Image.network(
                 meucarro.urlImage!,
-                width: 550,
+                width: 250,
               ),
             ),
           ],
