@@ -1,5 +1,7 @@
 Aplicativo criado usando a linguagem de programação Dart e o Framework Flutter, para fins de estudo e aprendizagem.
 
+Versão Android - ^15.0
+
 1. APLICATIVO PRONTO.
 
    
